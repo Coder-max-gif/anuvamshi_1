@@ -1,0 +1,18 @@
+ANUVAMSHI SHETTY — CLAUDE CODE PROMPT PACK
+VIDEO-FIRST WEBSITE BUILD
+
+IMPORTANT PROJECT RULE:
+Do NOT invent a different website concept, a new brand, a new visual identity, or unrelated 3D scenes.
+The supplied original video is the primary visual source and the website must be built around it.
+Use ONLY the business content supplied in this pack and the original video/assets supplied by the user.
+Do not invent testimonials, clients, transaction history, financial results, credentials, statistics, awards, regulatory status, investor names, or external links.
+
+HOW TO USE:
+1. Open the existing website project in Claude Code.
+2. Place the original video inside the project, preferably at public/source/founder-film.mp4.
+3. Copy the files in this ZIP into the project or keep them open as prompt references.
+4. Paste 01_MASTER_PROMPT.md into Claude Code first.
+5. Follow prompts 02–07 in order. Do not ask Claude to start a new design unrelated to the supplied video.
+6. If a sequence or visual treatment already exists in the project, inspect and reuse it instead of replacing it.
+
+The website must be one coherent experience: video-derived cinematic hero/scrollytelling, the supplied content, clear navigation and supporting sections. The video is the visual foundation; content is organised around it.

@@ -1,0 +1,3 @@
+Source: https://github.com/greensock/gsap-skills (official, MIT)
+Commit: aed9cfd3277740755f6bfc1155c7aa645403b760
+Installed: 2026-11-02 (copied SKILL.md only; no scripts)

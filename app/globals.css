@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html { background: #06080c; scroll-behavior: auto; -webkit-text-size-adjust: 100%; }
+body { @apply bg-ink font-sans text-bone antialiased; text-rendering: optimizeLegibility; overflow-x: clip; }
+::selection { background: #d9703c; color: #06080c; }
+:focus-visible { outline: 2px solid #f0a45d; outline-offset: 3px; border-radius: 2px; }
+
+@layer components {
+  .eyebrow { @apply text-[0.7rem] font-medium uppercase tracking-[0.24em]; }
+
+  .nav-link {
+    @apply relative inline-flex min-h-[44px] items-center px-3 text-[0.84rem] text-bone/70 transition-colors duration-300 hover:text-bone;
+  }
+  .nav-link::after {
+    content: ""; @apply absolute bottom-2.5 left-3 right-3 h-px origin-left scale-x-0 bg-amber transition-transform duration-500;
+  }
+  .nav-link:hover::after, .nav-link[aria-current="page"]::after { @apply scale-x-100; }
+  .nav-link[aria-current="page"] { @apply text-bone; }
+
+  .btn-primary {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full bg-bone px-6 text-sm font-medium text-ink transition-colors duration-300 hover:bg-amber;
+  }
+  .btn-ghost {
+    @apply inline-flex min-h-[44px] items-center justify-center gap-2 rounded-full border border-bone/25 px-6 text-sm text-bone transition-colors duration-300 hover:border-amber hover:text-amber;
+  }
+  .link-arrow { @apply inline-flex min-h-[44px] items-center gap-3 text-sm font-medium text-bone transition-colors hover:text-amber; }
+  .link-arrow__icon { @apply inline-block transition-transform duration-500; }
+  .link-arrow:hover .link-arrow__icon { transform: translateX(6px); }
+
+  .prose-ed p { @apply text-[1.0625rem] leading-[1.75] text-bone/75; max-width: 62ch; }
+  .prose-ed p + p { @apply mt-5; }
+
+  /* Dusk band: the navy→ember backdrop from the final act of the film. */
+  .dusk-band { background: radial-gradient(120% 90% at 50% 120%, rgba(217,112,60,.55) 0%, rgba(120,62,58,.35) 30%, rgba(20,38,74,.55) 62%, #0a1222 100%); }
+
+  .scroll-line { @apply relative block h-10 w-px overflow-hidden bg-bone/15; }
+  .scroll-line::after { content: ""; @apply absolute inset-x-0 top-0 h-1/2 bg-amber; animation: scroll-line 2.2s cubic-bezier(.65,0,.35,1) infinite; }
+}
+
+@keyframes scroll-line { 0% { transform: translateY(-100%); } 100% { transform: translateY(200%); } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
