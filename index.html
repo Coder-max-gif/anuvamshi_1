@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anuvamshi Shetty | CFA prep, investing and financial modeling</title>
+  <meta name="description" content="Anuvamshi Shetty, founder of The Lighthouse Capital, TEDx speaker and CFA Level III candidate. Courses, notes and 1-on-1 sessions for CFA candidates, investors and founders." />
+  <link rel="canonical" href="https://example.com/" />
+  <meta property="og:title" content="Anuvamshi Shetty | CFA prep, investing and financial modeling" />
+  <meta property="og:description" content="Courses, notes, newsletters and 1-on-1 sessions for CFA candidates, investors and founders." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta name="theme-color" content="#0b1d3a" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1d3a'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-style='italic' font-size='44' fill='white'%3E%CE%B1%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500&family=Instrument+Serif:ital@1&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="effects.css" />
+  <!-- Show the intro loader once per session (never with reduced motion). -->
+  <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches&&!sessionStorage.getItem("nv-intro"))document.documentElement.classList.add("has-loader","is-loading")}catch(e){}</script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Person","name":"Anuvamshi Shetty","jobTitle":"Founder, The Lighthouse Capital","url":"https://example.com/","sameAs":["https://www.instagram.com/anuvamshishetty/","https://in.linkedin.com/in/anuvamshi-shetty-354aa7113"]}
+  </script>
+</head>
+<body>
+  <div class="loader" role="status" aria-live="polite">
+    <div class="loader-inner">
+      <svg class="loader-alpha" viewBox="0 0 140 100" aria-hidden="true">
+        <path pathLength="1" d="M128 14 C 104 30, 92 86, 56 86 C 30 86, 14 70, 14 50 C 14 30, 30 14, 54 14 C 92 14, 104 70, 130 88" />
+      </svg>
+      <span class="loader-count" aria-hidden="true">000</span>
+      <span class="sr-only">Loading</span>
+    </div>
+  </div>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Fixed WebGL stage: light sections are transparent so the 3D shows through; navy sections cover it. -->
+  <canvas id="stage" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" data-theme="light">
+    <a class="brand" href="#top" aria-label="Alpha, back to top">
+      <span class="brand-full brand-alpha" aria-hidden="true">α</span>
+      <span class="brand-mono brand-alpha" aria-hidden="true">α</span>
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">
+      <span class="sr-only">Menu</span><span class="bars" aria-hidden="true"></span>
+    </button>
+    <nav id="primary-nav" aria-label="Primary">
+      <ul>
+        <li><a href="#cfa">CFA</a></li>
+        <li><a href="#investors">Investors</a></li>
+        <li><a href="#founders">Founders</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- 1. HERO -->
+    <section id="top" class="section hero light" data-scene="hero">
+      <h1 class="display hero-title">Learn finance the way markets reward it:<br /><em>with discipline.</em></h1>
+      <div class="hero-foot">
+        <p class="lead reveal">CFA prep, investing letters and financial models<br class="br-d" /> by <em>Anuvamshi Shetty.</em></p>
+        <p class="eyebrow reveal">Known for:</p>
+        <ul class="press reveal" aria-label="Highlights">
+          <li class="w1">THE LIGHTHOUSE CAPITAL</li>
+          <li class="w2">TEDx <em>Speaker</em></li>
+          <li class="w3">CFA·LEVEL III</li>
+          <li class="w4">28K+<b> community</b></li>
+          <li class="w5">CFA study group</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2. TURN (alpha rotates away) -->
+    <section class="section spacer light" data-scene="turn" aria-hidden="true"></section>
+
+    <!-- 3. MEET -->
+    <!-- INTERLUDE: pinned chapter title. Words fade in on scroll, then the stage fades out as the next section arrives. -->
+    <section class="section interlude light" data-scene="empty" aria-labelledby="il-meet">
+      <div class="il-stage">
+        <h2 class="il-title" id="il-meet"><span class="il-w">Meet</span> <span class="il-w"><em>Anuvamshi.</em></span></h2>
+        <p class="il-meta" aria-hidden="true"><span>01 / 06</span><span>About</span></p>
+      </div>
+    </section>
+
+    <!-- 4. FOUNDER (navy): pinned stage. The cutout stays fixed at the bottom while the statement
+         reveals word by word above it. The photo is colour-graded by the #nv-grade SVG filter. -->
+    <section id="about" class="section founder navy" data-scene="empty" aria-labelledby="f-h">
+      <svg class="f-filters" width="0" height="0" aria-hidden="true" focusable="false">
+        <filter id="nv-grade" color-interpolation-filters="sRGB">
+          <feColorMatrix type="saturate" values="0"/>
+          <feComponentTransfer>
+            <feFuncR type="table" tableValues="0.02 0.10 0.42 0.86 0.98"/>
+            <feFuncG type="table" tableValues="0.05 0.18 0.55 0.91 0.99"/>
+            <feFuncB type="table" tableValues="0.14 0.36 0.80 0.98 1"/>
+          </feComponentTransfer>
+        </filter>
+      </svg>
+      <div class="f-stage">
+        <div class="f-grade" aria-hidden="true"></div>
+        <h2 class="f-statement" id="f-h">I help CFA candidates, investors and founders turn <em>financial knowledge</em> into an edge.</h2>
+        <figure class="cutout">
+          <img src="assets/founder.webp" alt="Portrait of Anuvamshi Shetty" width="963" height="674" decoding="async" />
+        </figure>
+        <div class="f-vignette" aria-hidden="true"></div>
+        <p class="f-name"><span>Founder, The Lighthouse Capital</span><b>Anuvamshi <em>Shetty</em></b></p>
+      </div>
+    </section>
+
+    <!-- 5. MISSION (navy) -->
+    <section class="section mission navy" data-scene="empty">
+      <div class="prose reveal">
+        <p>I’m the founder of <em>The Lighthouse Capital</em>, a TEDx speaker and a CFA Level III candidate.</p>
+        <p>I share how markets really work with a community of 28,000+ on Instagram, and I run a CFA study group for candidates at every level.</p>
+        <p>Everything here is built to make finance <em>clear, practical and repeatable.</em></p>
+      </div>
+    </section>
+
+    <!-- INTERLUDE -->
+    <section class="section interlude light" data-scene="empty" aria-labelledby="il-what">
+      <div class="il-stage">
+        <h2 class="il-title" id="il-what"><span class="il-w">What</span> <span class="il-w"><em>I do.</em></span></h2>
+        <p class="il-meta" aria-hidden="true"><span>02 / 06</span><span>Offerings</span></p>
+      </div>
+    </section>
+
+    <!-- 6. ROLES (navy) -->
+    <section class="section roles navy" data-scene="empty">
+      <ol class="role-list">
+        <li class="reveal"><span class="num">01</span><h3><a href="#cfa">For CFA candidates</a></h3><p>Courses, notes and resources for Levels I to III, plus financial modeling and 1-on-1 sessions.</p></li>
+        <li class="reveal"><span class="num">02</span><h3><a href="#investors">For investors</a></h3><p>A newsletter on investing in financial markets, personal finance sessions and a financial models course.</p></li>
+        <li class="reveal"><span class="num">03</span><h3><a href="#founders">For founders</a></h3><p>Premium, story-led websites that make your company look as serious as it is.</p></li>
+      </ol>
+    </section>
+
+    <!-- INTERLUDE -->
+    <section class="section interlude light" data-scene="empty" aria-labelledby="il-num">
+      <div class="il-stage">
+        <h2 class="il-title" id="il-num"><span class="il-w">The</span> <span class="il-w"><em>maths.</em></span></h2>
+        <p class="il-meta" aria-hidden="true"><span>03 / 06</span><span>Compounding</span></p>
+      </div>
+    </section>
+
+    <!-- 6b. COMPOUNDING (navy): count-up stats + self-drawing chart, computed in effects.js.
+         Illustrative maths only: fixed assumed rates, not a forecast or performance claim. -->
+    <section class="section stats navy" data-scene="empty" aria-labelledby="stats-h">
+      <h2 class="h-sec" id="stats-h">Why starting early matters <small>Illustrative</small></h2>
+      <ul class="stat-grid">
+        <li><span class="stat-num" data-stat="invested" data-to="0" data-prefix="₹" data-suffix="L">0</span><span class="stat-label">You invest (₹10k a month)</span></li>
+        <li><span class="stat-num" data-stat="equity" data-to="0" data-prefix="₹" data-suffix="L">0</span><span class="stat-label">At an assumed 12% a year</span></li>
+        <li><span class="stat-num" data-stat="savings" data-to="0" data-prefix="₹" data-suffix="L">0</span><span class="stat-label">At 4% in savings</span></li>
+        <li><span class="stat-num" data-stat="years" data-to="0">0</span><span class="stat-label">Years</span></li>
+      </ul>
+      <figure class="chart">
+        <svg viewBox="0 0 1000 380" role="img" aria-label="Illustrative chart: value of 10,000 rupees invested monthly for 20 years at 12 percent versus 4 percent a year"></svg>
+        <div class="chart-tip" aria-hidden="true"></div>
+        <ul class="legend"><li>Invested at 12% (assumed)</li><li class="b">Savings at 4%</li></ul>
+        <figcaption>Illustrative maths with constant assumed returns, compounded monthly. Not a forecast; real returns vary and can be negative.</figcaption>
+      </figure>
+    </section>
+
+    <!-- 7. QUOTE (alpha returns from above) -->
+    <section class="section quote light" data-scene="quote">
+      <blockquote class="reveal">
+        <p>“Returns are what the market gives you.<br class="br-d" /> <em>Alpha</em> is what <em>discipline</em> earns you.”</p>
+      </blockquote>
+    </section>
+
+    <!-- 8. FRONTIER (glass orb rises) -->
+    <section class="section frontier light" data-scene="orb">
+      <p class="statement-sm reveal">Information is everywhere. <em>Understanding</em> is rare, and it is the only edge that compounds.</p>
+    </section>
+    <section class="section orb-a light" data-scene="orb">
+      <p class="statement-sm reveal bottom">Good investing starts with <em>protecting capital</em>, then growing it. I teach the frameworks behind both: valuation, risk and <em>behaviour.</em></p>
+    </section>
+    <section class="section orb-b light" data-scene="orb">
+      <p class="statement-sm reveal bottom">The CFA curriculum is the best finance education in the world. I help you <em>finish it</em>, and use it <em>every single day.</em></p>
+    </section>
+
+    <!-- 9. FOCUS (navy) -->
+    <section class="section focus navy" data-scene="empty">
+      <p class="statement-sm reveal">Three audiences, one belief: <em>clarity beats complexity</em>, whether you’re sitting an exam, building a portfolio or building a company.</p>
+    </section>
+
+    <!-- 9b. TICKER BAND: speed and skew follow scroll velocity. Decorative. -->
+    <div class="ticker-band navy" data-scene="empty" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Alpha <i>α</i> <em>Beta</em> <i>β</i> Sharpe <i>σ</i> <em>DCF</em> <i>Δ</i> Ethics <i>Σ</i> <em>Duration</em> <i>θ</i> Convexity <i>γ</i></span>
+        <span>Alpha <i>α</i> <em>Beta</em> <i>β</i> Sharpe <i>σ</i> <em>DCF</em> <i>Δ</i> Ethics <i>Σ</i> <em>Duration</em> <i>θ</i> Convexity <i>γ</i></span>
+      </div>
+    </div>
+
+    <!-- INTERLUDE -->
+    <section class="section interlude light" data-scene="empty" aria-labelledby="il-cfa">
+      <div class="il-stage">
+        <h2 class="il-title" id="il-cfa"><span class="il-w">For CFA</span> <span class="il-w"><em>candidates.</em></span></h2>
+        <p class="il-meta" aria-hidden="true"><span>04 / 06</span><span>Levels I · II · III</span></p>
+      </div>
+    </section>
+
+    <!-- 10. FOR CFA CANDIDATES (navy): hover rows + cursor-following preview, each row opens a subpage -->
+    <section id="cfa" class="section offers-sec navy" data-scene="empty" aria-labelledby="cfa-h">
+      <div class="offers-head">
+        <p class="kicker reveal">For CFA candidates</p>
+        <h2 class="h-sec" id="cfa-h">Pass with <em>structure</em>, not stress.</h2>
+      </div>
+      <ol class="offers">
+        <li class="reveal"><a href="cfa-courses.html" data-glyph="Σ" data-tag="Levels I · II · III"><span class="o-num">01</span><span class="o-title">Explore courses</span><span class="o-desc">Structured prep for every level, topic by topic.</span><span class="o-arrow" aria-hidden="true">→</span></a></li>
+        <li class="reveal"><a href="cfa-notes.html" data-glyph="∂" data-tag="Notes &amp; study group"><span class="o-num">02</span><span class="o-title">Notes &amp; resources</span><span class="o-desc">Summaries, formula sheets and the study group.</span><span class="o-arrow" aria-hidden="true">→</span></a></li>
+        <li class="reveal"><a href="cfa-sessions.html" data-glyph="₹" data-tag="₹5,000 per session"><span class="o-num">03</span><span class="o-title">Financial modeling &amp; 1-on-1</span><span class="o-desc">Personal sessions on modeling and your weak areas.</span><span class="o-arrow" aria-hidden="true">→</span></a></li>
+      </ol>
+    </section>
+
+    <!-- INTERLUDE -->
+    <section class="section interlude light" data-scene="empty" aria-labelledby="il-inv">
+      <div class="il-stage">
+        <h2 class="il-title" id="il-inv"><span class="il-w">For</span> <span class="il-w"><em>investors.</em></span></h2>
+        <p class="il-meta" aria-hidden="true"><span>05 / 06</span><span>Markets · Money · Models</span></p>
+      </div>
+    </section>
+
+    <!-- 11. FOR INVESTORS (navy) -->
+    <section id="investors" class="section offers-sec navy" data-scene="empty" aria-labelledby="inv-h">
+      <div class="offers-head">
+        <p class="kicker reveal">For investors</p>
+        <h2 class="h-sec" id="inv-h">Invest with <em>conviction</em>, not noise.</h2>
+      </div>
+      <ol class="offers">
+        <li class="reveal"><a href="newsletter.html" data-glyph="α" data-tag="The Alpha Letter"><span class="o-num">01</span><span class="o-title">Investing newsletter</span><span class="o-desc">Clear thinking on financial markets, in your inbox.</span><span class="o-arrow" aria-hidden="true">→</span></a></li>
+        <li class="reveal"><a href="personal-finance.html" data-glyph="₹" data-tag="₹5,000 per session"><span class="o-num">02</span><span class="o-title">1-on-1 personal finance</span><span class="o-desc">A private session to map and plan your money.</span><span class="o-arrow" aria-hidden="true">→</span></a></li>
+        <li class="reveal"><a href="financial-models.html" data-glyph="Δ" data-tag="Course"><span class="o-num">03</span><span class="o-title">Financial models course</span><span class="o-desc">Build the models analysts actually use.</span><span class="o-arrow" aria-hidden="true">→</span></a></li>
+      </ol>
+    </section>
+
+    <!-- INTERLUDE -->
+    <section class="section interlude light" data-scene="empty" aria-labelledby="il-fnd">
+      <div class="il-stage">
+        <h2 class="il-title" id="il-fnd"><span class="il-w">For</span> <span class="il-w"><em>founders.</em></span></h2>
+        <p class="il-meta" aria-hidden="true"><span>06 / 06</span><span>Websites</span></p>
+      </div>
+    </section>
+
+    <!-- 12. FOR FOUNDERS (closing, ring of alphas) -->
+    <section id="founders" class="section closing light" data-scene="ring">
+      <p class="kicker reveal">For founders</p>
+      <h2 class="display reveal">Your company deserves<br />a <em>website like this.</em></h2>
+      <a class="cta reveal" href="founders-website.html">See website builds</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="brand-full brand-alpha" aria-label="Alpha">α</span>
+    <ul class="social">
+      <li><a href="https://www.instagram.com/anuvamshishetty/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM12 3c-2.4 0-2.7 0-3.7.1-3.3.1-4.9 1.7-5 5C3 9.1 3 9.6 3 12s0 2.7.1 3.7c.1 3.3 1.7 4.9 5 5 1 .1 1.3.1 3.9.1s2.7 0 3.7-.1c3.3-.1 4.9-1.7 5-5 .1-1 .1-1.3.1-3.7s0-2.7-.1-3.7c-.1-3.3-1.7-4.9-5-5C14.7 3 14.4 3 12 3zm0 1.6c2.4 0 2.6 0 3.6.1 2.4.1 3.5 1.2 3.6 3.6.1.9.1 1.2.1 3.6s0 2.7-.1 3.6c-.1 2.4-1.2 3.5-3.6 3.6-1 .1-1.2.1-3.6.1s-2.6 0-3.6-.1c-2.4-.1-3.5-1.2-3.6-3.6-.1-.9-.1-1.2-.1-3.6s0-2.7.1-3.6c.1-2.4 1.2-3.5 3.6-3.6.9-.1 1.2-.1 3.6-.1z"/></svg></a></li>
+      <li><a href="https://in.linkedin.com/in/anuvamshi-shetty-354aa7113" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.1c.5-1 1.8-2 3.7-2 4 0 4.7 2.6 4.7 6V21h-4v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9V21H9z"/></svg></a></li>
+    </ul>
+    <ul class="foot-links"><li><a href="#cfa">CFA</a></li><li><a href="#investors">Investors</a></li><li><a href="#founders">Founders</a></li></ul>
+    <p class="disclaimer">Educational content only, not investment advice. CFA® and Chartered Financial Analyst® are registered trademarks owned by CFA Institute.</p>
+  </footer>
+
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script type="importmap">
+  { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  } }
+  </script>
+  <script type="module" src="main.js"></script>
+  <script type="module" src="effects.js"></script>
+  <script type="module" src="transitions.js"></script>
+</body>
+</html>
